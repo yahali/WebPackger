@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{783F8E2E-8934-4E63-9CB6-2BF863B2490F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebPackageTool</RootNamespace>
+    <AssemblyName>PackageTool</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PackageControl.Designer.cs">
+      <DependentUpon>PackageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebPackager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageControl.resx">
+      <DependentUpon>PackageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="projects\GasStationYY\AppInterfaceOnSite.pack" />
+    <None Include="projects\GasStationYY\BizWap.pack" />
+    <None Include="projects\GasStationYY\Json.pack" />
+    <None Include="projects\GasStationYY\PHP_YYPC.pack" />
+    <None Include="projects\GasStationYY\Services.ComBackendServic.pack" />
+    <None Include="projects\GasStationYY\Services.CouponPackageService.pack" />
+    <None Include="projects\GasStationYY\Services.DataHandler.pack" />
+    <None Include="projects\GasStationYY\Services.DelayedMessageService.pack" />
+    <None Include="projects\GasStationYY\Services.FleetCardSendBillService.pack" />
+    <None Include="projects\GasStationYY\Services.FileHandlerOnlyOneService.pack" />
+    <None Include="projects\GasStationYY\Services.MarketPrizeSendService.pack" />
+    <None Include="projects\GasStationYY\Services.OilOrderPaySuccessService.pack" />
+    <None Include="projects\GasStationYY\Services.OuterRing.MessagePushService.pack" />
+    <None Include="projects\GasStationYY\Services.SystemLogsService.pack" />
+    <None Include="projects\GasStationYY\Services.SystemScheduledTask.pack" />
+    <None Include="projects\GasStationYY\Services.TicketService.pack" />
+    <None Include="projects\GasStationYY\sql.pack" />
+    <None Include="projects\GasStationYY\sql2.pack" />
+    <None Include="projects\GasStationYY\sql_outer.pack" />
+    <None Include="projects\GasStationYY\sql_sms.pack" />
+    <None Include="projects\GasStationYY\Web.pack" />
+    <None Include="projects\GasStationYY\WxPublic.pack" />
+    <None Include="projects\_GasStationYYSub\_MicroService_outer.pack" />
+    <None Include="projects\_GasStationYYSub\_MicroService_recall_CouponApi.pack" />
+    <None Include="projects\_GasStationYYSub\_MicroService_recall_Web.pack" />
+    <None Include="projects\_GasStationYYSub\_MicroService_Services.recall_timer.pack" />
+    <None Include="projects\_GasStationYYSub\_MicroService_Services.sms_DelayedService.pack" />
+    <None Include="projects\_GasStationYYSub\_MicroService_Services.sms_SMSNotifySendService.pack" />
+    <None Include="projects\_GasStationYYSub\_MicroService_SMS_Web.pack" />
+    <None Include="projects\__GateWayPay\Gateway_PHP_Pay.pack" />
+    <None Include="projects\__GateWayPay\Gateway_Services.PayChannelQuery.pack" />
+    <None Include="projects\__GateWayPay\Gateway_Services.PayChannelSend.pack" />
+    <None Include="projects\__GateWayPay\Gateway_Web.pack" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

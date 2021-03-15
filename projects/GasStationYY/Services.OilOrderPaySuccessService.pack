@@ -1,0 +1,15 @@
+﻿time=2020-10-16 16:01:57
+src=E:\GasStationYY\net\YT.NY.Services.OilOrderPaySuccessService\bin\Release
+dest=E:\Project\release_file\OilOrderPaySuccessService
+web_id=
+theme=
+except_dir=obj
+except_extension=.config
+except_extension=.xml
+except_extension=.manifest
+except_extension=.vshost.exe
+except_dir=roslyn
+except_dir=zh-Hans
+except_dir=\roslyn
+except_dir=\zh-Hans
+except_extension=.pdb

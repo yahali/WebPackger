@@ -1,0 +1,15 @@
+﻿time=2020-11-16 14:11:25
+src=E:\GasStationOther\GasStationPay\src\Ebo.Services.PayChannelSend\bin\Release
+dest=E:\Project\release_file\Gateway_PayChannelSendNew
+web_id=
+theme=
+except_dir=obj
+except_dir=roslyn
+except_dir=zh-Hans
+except_dir=\roslyn
+except_dir=\zh-Hans
+except_extension=.config
+except_extension=.manifest
+except_extension=.vshost.exe
+except_extension=.db
+except_extension=.pdb

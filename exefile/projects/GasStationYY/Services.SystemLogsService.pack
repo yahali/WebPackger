@@ -1,0 +1,15 @@
+﻿time=2020-10-21 10:02:07
+src=E:\GasStationYY\net\YT.NY.Services.SystemLogsService\bin\Release
+dest=E:\Project\release_file\SystemLogsService
+web_id=
+theme=
+except_dir=obj
+except_extension=.manifest
+except_extension=.config
+except_extension=.vshost.exe
+except_extension=.xml
+except_dir=roslyn
+except_dir=zh-Hans
+except_dir=\roslyn
+except_dir=\zh-Hans
+except_extension=.pdb

@@ -1,0 +1,16 @@
+﻿time=2021-01-06 13:54:01
+src=E:\GasStationGit\valuation-system\src\YT.NY.Valuation.BackgroundWorker\bin\Release
+dest=E:\Project\release_file\Sub_Valuation_Services_Time
+web_id=
+theme=
+except_dir=obj
+except_dir=roslyn
+except_dir=zh-Hans
+except_dir=\roslyn
+except_dir=\zh-Hans
+except_extension=.config
+except_extension=.xml
+except_extension=.manifest
+except_extension=.vshost.exe
+except_extension=.pdb
+except_extension=.db
